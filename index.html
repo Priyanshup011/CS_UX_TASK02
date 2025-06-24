@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CoinDesk Email</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px 10px;
+      background: linear-gradient(-45deg, #0f172a, #1e3a8a, #10b981, #0ea5e9);
+      background-size: 400% 400%;
+      animation: gradientFlow 15s ease infinite;
+    }
+
+    @keyframes gradientFlow {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .phone-frame {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 40px;
+      padding: 12px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 0 40px rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+    }
+
+    .email-container {
+      background-color: #ffffff;
+      width: 100%;
+      border-radius: 25px;
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #10b981, #3b82f6);
+      color: white;
+      padding: 25px;
+      text-align: center;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .content {
+      padding: 25px 20px;
+      text-align: left;
+    }
+
+    .content h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .section {
+      margin-top: 25px;
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      color: #1e3a8a;
+    }
+
+    .section-content {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    .button {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .send-mail-btn {
+      background: linear-gradient(90deg, #10b981, #3b82f6);
+      color: white;
+      padding: 12px 30px;
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s ease;
+    }
+
+    .send-mail-btn:hover {
+      opacity: 0.9;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #666;
+      background-color: #f3f4f6;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+
+    .footer span {
+      color: #ef4444;
+    }
+
+    @media (max-width: 600px) {
+      .header h1 {
+        font-size: 20px;
+      }
+
+      .content h2 {
+        font-size: 16px;
+      }
+
+      .content p, .section-content {
+        font-size: 14px;
+      }
+
+      .send-mail-btn {
+        font-size: 14px;
+        padding: 10px 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="phone-frame">
+    <div class="email-container">
+      <!-- Header -->
+      <div class="header">
+        <h1>Welcome to CoinDesk!</h1>
+      </div>
+
+      <!-- Main Content -->
+      <div class="content">
+        <h2>Hi there 👋,</h2>
+        <p>
+          We're excited to have you on board. Get ready to experience the latest updates in the world of cryptocurrency.
+        </p>
+        <p>
+          Tap the button below to access your dashboard and unlock insights tailored just for you.
+        </p>
+
+        <div class="button">
+          <a href="#" class="send-mail-btn">Send Mail</a>
+        </div>
+
+        <!-- About More Section -->
+        <div class="section">
+          <div class="section-title">📢 About More</div>
+          <div class="section-content">
+            CoinDesk is your trusted source for breaking news, in-depth analysis, and real-time updates on blockchain and crypto markets. Our mission is to empower the future of finance with transparency and insight.
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        Sent with <span>❤️</span> from <strong>CoinDesk</strong><br />
+        If you did not sign up, just ignore this email.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
